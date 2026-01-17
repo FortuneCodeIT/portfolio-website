@@ -1091,4 +1091,15 @@ li  a.active {
 .contact-us button {
    background: #d8d8d8;
 }
+.contact-us button {
+    background: #111;
+    padding: 15px;
+    margin: 20px 0;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 12px;
+    color: #f3f3f3;
+    width: 100%;
+}
 
