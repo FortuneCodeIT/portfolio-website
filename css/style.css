@@ -1040,7 +1040,7 @@ li  a.active {
     align-items: center;
     gap: 50px;
 }
-.phone {
+.to-know {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -1070,6 +1070,32 @@ li  a.active {
     justify-self: center;
     flex: 1;
     margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.all-contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.to-know {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
 }
 
 .contact-us input, .contact-us textarea {
@@ -1102,4 +1128,5 @@ li  a.active {
     color: #f3f3f3;
     width: 100%;
 }
+
 
