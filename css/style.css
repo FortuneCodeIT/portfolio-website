@@ -1016,4 +1016,53 @@ li  a.active {
     width: 80%;
     text-align: center;
   }
-}  
+
+} 
+
+.contact-container {
+    background: rgb(37, 37, 37);
+    padding: 20px 0;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.contact-img img {
+    height: 100px;
+    border: 2px solid rgba(255, 255, 255, 0.05) ;
+    border-radius: 50px;
+}
+.all-contacts {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.phone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.phone small {
+    color: #c7c328;
+}
+.num {
+    margin-top: 20px;
+    color: #ff004e;
+}
+.num a {
+    text-decoration: none;
+    color: #ff004e;
+}
+.mail {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.website {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
