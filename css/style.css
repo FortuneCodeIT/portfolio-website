@@ -1066,3 +1066,29 @@ li  a.active {
     align-items: center;
     gap: 10px;
 }
+.contact-us {
+    justify-self: center;
+    flex: 1;
+    margin-top: 50px;
+}
+
+.contact-us input, .contact-us textarea {
+    width: 100%;
+    padding: 15px;
+    background: #fff;
+    color: black;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 12px;
+    margin: 10px 0;
+}
+.contact-us textarea {
+    min-height: 150px;
+    resize: none;
+}
+.contact-us input, .contact-us textarea:disabled
+.contact-us button {
+   background: #d8d8d8;
+}
+
