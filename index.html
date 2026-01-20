@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.js">
+    <link rel="stylesheet" href="style.css">
+      <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <title>Document</title>
 </head>
-<body>
+<body >
  <div class="container">
    <section class="home-section">
 <header class="header">
@@ -17,7 +17,7 @@
     </div>
     <nav>
         <div class="sidebar">
-         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="" onclick=hideSidebar()>
+       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="" onclick=hideSidebar()>
         <path fill="none" stroke="#ededed" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M6.758 17.243L12.001 12m5.243-5.243L12 12m0 0L6.758 6.757M12.001 12l5.243 5.243"/></svg>
      
     <ul>
@@ -38,13 +38,18 @@
         <li><a href="#projects" style="--i:5"class="hideOnMobile">Projects</a></li>
         <li><a href="#contact" style="--i:6"class="hideOnMobile">contact</a></li>
         </ul>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 50 50" class="menu-button" onclick=showSidebar()>
+       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 50 50" class="menu-button" onclick=showSidebar()>
         <path fill="#ededed" d="M10 12h30v4H10zm0 10h30v4H10zm0 10h30v4H10z"/></svg>
     
     </nav>
 </header>
 
-<div class="frame home">
+<div class="frame home" data-aos="fade-up" data-aos="fade-up"
+  data-aos-duration="1000"
+  data-aos-delay="300"
+  data-aos-easing="ease-in-out"
+
+  Smooth animation>
     
     <div class="home-content">
         <div>
@@ -73,7 +78,13 @@
 </section>
 
 
-<section class="frame hero-container" id="about">
+<section class="frame hero-container" id="about" >
+   <div data-aos="fade-up" data-aos="fade-up"
+  data-aos-duration="1000"
+  data-aos-delay="300"
+  data-aos-easing="ease-in-out"
+
+  Smooth animation>
    <div class="line">
        <h1>ABOUT ME</h1>
        <div class="circle-container">
@@ -117,18 +128,22 @@
 <hr style="width: 350px; border-color: #ff004e;">
  <div class="hire-btn">
  <a href="">Hire Me</a> 
- <a href="resume.pdf" download >Download CV</a>   
+ <a href="resume.pdf" download>Download CV</a>  
  </div>
 </div>
 </div>
-
+</div>
 </div>
 </section>
 
 
-
-
 <section class="services-container" id="service">
+     <div data-aos="fade-up" data-aos="fade-up"
+  data-aos-duration="1000"
+  data-aos-delay="300"
+  data-aos-easing="ease-in-out"
+
+  Smooth animation >
 <div class="line">
        <h1>SERVICES</h1>
        <div class="circle-container">
@@ -221,11 +236,17 @@
             </li>
          </ul></p>
       </div>   
-       
+       </div>
     </div>
 </section>
 
 <section class="skills-container" id="skills">
+    <div data-aos="fade-up" data-aos="fade-up"
+  data-aos-duration="1000"
+  data-aos-delay="300"
+  data-aos-easing="ease-in-out"
+
+  Smooth animation >
    <div class="line">
        <h1>SKILLS</h1>
        <div class="circle-container">
@@ -303,10 +324,17 @@
       </div>
 </div>
 </div>
+    </div>
 </section>
 
 
 <section class="projects" id="projects">
+    <div data-aos="fade-up" data-aos="fade-up"
+  data-aos-duration="1000"
+  data-aos-delay="300"
+  data-aos-easing="ease-in-out"
+
+  Smooth animation >
     <div class="line">
        <h1>PROJECTS</h1>
        <div class="circle-container">
@@ -385,12 +413,17 @@
    
   </div>
 </div>
-
-
-
+    </div>
 </section>
 
-     <section class="contact-container" id="contact">
+
+<section class="contact-container" id="contact">
+    <div data-aos="fade-up" data-aos="fade-up"
+  data-aos-duration="1000"
+  data-aos-delay="300"
+  data-aos-easing="ease-in-out"
+
+  Smooth animation >
     <div class="line">
        <h1>CONTACT</h1>
        <div class="circle-container">
@@ -448,7 +481,16 @@
             </div>
 
     </div>
- <form action="" class="contact-us">
+
+        
+    <form action="" class="contact-us">
+       <div data-aos="fade-up" data-aos="fade-up"
+  data-aos-duration="1000"
+  data-aos-delay="300"
+  data-aos-easing="ease-in-out"
+
+  Smooth animation >
+      
         <input type="text" name="" placeholder="Name" id="name" disabled>
 
         <input type="text" name="" placeholder="E-mail" id="email" disabled>
@@ -462,24 +504,14 @@
         </a>
         
     </form>
+    </div>
 </section>
 
 </div>
-<script src="js/script.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
