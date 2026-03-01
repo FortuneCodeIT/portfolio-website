@@ -49,6 +49,11 @@ body {
     filter: drop-shadow(0 0 6px rgba(0,0,0,0.4));
     border: #081b29;
 }
+nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 ul {
     display: flex;
     font-size: 18px;
@@ -218,11 +223,20 @@ li  a.active {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 450px;
+    max-width: 350px;
     background-color:transparent;
-    opacity: 0;
-    animation: imageFloat 3s ease-in-out infinite ; 
-    animation-delay: calc(.3s * var(--i));
+    filter: drop-shadow( 0 0 30px #181717);  
+    opacity: 1;
+    /*
+    animation: imageFloat  3s ease-in-out infinite ; 
+    animation-delay:calc(.3s * var(--i));
+    */
+    transition: 0.5s ease, filter 0.5s ease;
+}
+.home-img img:hover {
+    filter: drop-shadow( 0 0 30px #181717)
+            drop-shadow( 0 0 30px #181717); 
+    transform: translateY(-10px);
 }
 .desktop-home-img img {
     display: block;
@@ -243,7 +257,6 @@ li  a.active {
 .mobile-home-img img {
     display: block;
     max-width:350px;
-    padding-left: 100px;
 }
 .name-intro {
     display: flex;
@@ -1124,6 +1137,105 @@ li  a.active {
 
 
 
+#btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.light-mode {
+    background: #000000;
+}
+
+.light-mode .header{
+    background: #e0e0e0;
+    box-shadow: 0 0 6px rgba(0, 0, 0.2);
+}
+ .light-mode ul li a,
+ .light-mode .logo a {
+        color: #000;
+ }
+ .light-mode li  a:hover,
+.light-mode li  a.active {
+    color: #ff004e;
+ }
+ .light-mode header svg path {
+    fill: #000;
+    stroke :#000;
+ }
+
+.light-mode .home-section,
+.light-mode .services-container,
+.light-mode .projects, 
+.light-mode .card-container,
+.light-mode .home-content h3,
+.light-mode .home-content h1 {
+    background: #e0e0e0;
+    color: #3f3f3f;
+    font-weight: 700;
+}
+
+.light-mode .home-content h3 span,
+.light-mode .about h3 {
+    color: #01709c;
+}
+.light-mode .cursor {
+    background-color: #01709c;
+}
+
+
+.light-mode .hero-container,
+.light-mode .skills-container,
+.light-mode .about p,
+.light-mode .row{
+   background: #acacac;
+   color: #3a3a3a;
+}
+
+.light-mode .card,
+.light-mode .card h3 {
+    background: #e0e0e0;
+    color: #525252;
+}
+.light-mode .card ul li {
+    color: #838383;
+}
+.light-mode .check-list svg path {
+    stroke: #00ff6d;
+    fill: none;
+}
+
+
+.light-mode .skills{
+    background: #acacac;
+    box-shadow: 0 6px 6px 6px rgb(117, 117, 117);
+}
+.light-mode .skills:hover {
+    box-shadow: 0 16px 30px #ff004e;
+}
+
+
+.light-mode .project-card {
+    background: #e0e0e0;
+    border: 1px solid #7a7a7a;
+}
+.light-mode .project-info h3 {
+    color: #525252;
+}
+.light-mode .project-info p {
+    color: #838383;
+}
+
+
+ .light-mode .contact-container {
+    background: #acacac;
+ }
+ .light-mode .contact-img img {
+    border: 1px solid #7a7a7a;
+ }
+ .light-mode .to-know small {
+    color: #3a3a3a;
+ }
 
 
 
