@@ -271,7 +271,7 @@ li  a.active {
     max-width: 450px;
 }
 .home-content h1 {
-    font-size: 40px;
+    font-size: 48px;
     font-weight: 700;
     margin: -3px 0;
     line-height: 1.2;
@@ -1236,6 +1236,7 @@ li  a.active {
  .light-mode .to-know small {
     color: #3a3a3a;
  }
+
 
 
 
