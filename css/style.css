@@ -137,7 +137,7 @@ li  a.active {
         display: block;
     }
 .header{
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
     display: flex;
@@ -1236,6 +1236,7 @@ li  a.active {
  .light-mode .to-know small {
     color: #3a3a3a;
  }
+
 
 
 
