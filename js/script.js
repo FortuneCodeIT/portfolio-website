@@ -1,3 +1,4 @@
+//this is for harmburger  nav bar
 function showSidebar() {
     const sidebar = document.querySelector ('.sidebar');
     sidebar.style.display = 'flex';
@@ -9,15 +10,10 @@ function hideSidebar() {
 } 
 
 
-
-
-
-
-
+//this is for the automatic typing and deleting 
 const phrases = [
     "Frontend Developer",
     "back end developer"
-  
 ];
 
 const typingText = document.getElementById('typing-text');
@@ -43,7 +39,6 @@ phrases.forEach((phrase, index) => {
     phraseIndicator.appendChild(dot);
     */
 });
-
 
 
 function updateActiveDot() {
@@ -121,7 +116,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 */
 
 
-
+// this is for the about typing and deleting
 const phrases1 = [
     "Frontend Developer",
     "back end developer"
@@ -192,5 +187,47 @@ function typeText1() {
         setTimeout(typeText1, 500);    
     }
 }
-
 setTimeout(typeText1, 1000);
+
+
+// this is for toggle button for dark and light mode
+
+
+const body = document.body;
+const btn = document.getElementById('btn');
+const text = document.getElementById('text');
+const icon = document.getElementById('icon');
+
+function updateButton(isLight) {
+    if(isLight) {
+        text.textContent = "Light Mode";
+        icon.textContent = "🌙";
+        text.style.color = "black";
+    } else {
+        text.textContent = "Dark Mode";
+        icon.textContent = "☀️";
+        text.style.color = "white";
+    }
+}
+
+let savedTheme = sessionStorage.getItem('theme');
+
+if (savedTheme === "light") {
+    document.body.classList.add('light-mode');
+}
+
+updateButton(document.body.classList.contains('light-mode'));
+
+btn.addEventListener("click", function() {
+    document.body.classList.toggle('light-mode');
+
+    let isLight = document.body.classList.contains('light-mode');
+
+    if(document.body.classList.contains('light-mode')) {
+        sessionStorage.setItem("theme", "light");
+    } else {
+         sessionStorage.setItem("theme", "dark");
+    }
+
+    updateButton(isLight);
+});
