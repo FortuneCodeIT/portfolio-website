@@ -200,11 +200,11 @@ const icon = document.getElementById('icon');
 
 function updateButton(isLight) {
     if(isLight) {
-        text.textContent = "Light Mode";
+        text.textContent = "Night Mode";
         icon.textContent = "🌙";
         text.style.color = "black";
     } else {
-        text.textContent = "Dark Mode";
+        text.textContent = "Day Mode";
         icon.textContent = "☀️";
         text.style.color = "white";
     }
